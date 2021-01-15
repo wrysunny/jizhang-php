@@ -2,7 +2,7 @@
 function allow_domain(){
 	$is_allow=false;
 	$servername=trim($_SERVER['SERVER_NAME']);
-	$Array=array("192.168.31.241","127.0.0.1","test.com","test1.com");
+	$Array=array("localhost","127.0.0.1","test.com","test1.com");
 	foreach($Array as $value){
 		$value=trim($value);
 		$domain=explode($value,$servername);
